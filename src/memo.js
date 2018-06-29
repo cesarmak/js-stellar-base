@@ -127,8 +127,8 @@ export class Memo {
     if (!isString(value)) {
       throw new Error("Expects string type got " + typeof(value));
     }
-    if (Buffer.byteLength(value, "utf8") > 28) {
-      throw new Error("Text should be <= 28 bytes. Got " + Buffer.byteLength(value, "utf8"));
+    if (Buffer.byteLength(value, "utf8") > 1028) {
+      throw new Error("Text should be <= 1028 bytes. Got " + Buffer.byteLength(value, "utf8"));
     }
   }
 
